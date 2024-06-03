@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact</title>
+    <link href='./style/Contact.css' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js"></script>
+    <script>
+        function toggleMenu() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('show');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggles = document.querySelectorAll('.faq-toggle');
+
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    toggle.closest('.faq').classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./imaginii index/logo (1).svg" alt="Logo">
+                <h1>Trans Courier</h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a   href="./DespreNoi.html">Firmă</a></li>
+                <li><a href="./Preturii.html">Prețuri</a></li>
+                <li><a  href="./Servicii.html">Servicii</a></li>
+                <li><a   href="./IntrebariFrecvente.html">Întrebări frecvente</a></li>
+                <li><a   href="./TrimiteColet.html">Trimite colet</a></li>
+                <li><a href="./Contact.html"><button>Contact</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background">
+            <img alt="foto" src="./imaginii Contact/Background (1).jpg">
+        </div>
+        <div class="container">
+            <div class="header-form">
+                <h1>Contactează-ne</h1>
+                <p>Folosiți cadrele agile pentru a oferi un rezumat solid pentru strategie, încurajând gândirea colaborativă pentru a promova valoarea generală.</p>
+            </div>
+            <div class="icon-form">
+                <div class="icon-item">
+                    <img src="./imaginii Contact/Icon (1).svg" alt="Icon">
+                    <p>Contact@logistics.com</p>
+                </div>
+                <div class="icon-item">
+                    <img src="./imaginii Contact/Icon (3).svg" alt="Icon">
+                    <p>(00) 112 365 489</p>
+                </div>
+                <div class="icon-item">
+                    <img src="./imaginii Contact/Icon (2).svg" alt="Icon">
+                    <p>Mon - Sat 9.00 - 18.00 <br> Sunday Closed</p>
+                </div>
+            </div>
+          <form method="POST" action="https://formspree.io/f/mkndgopk" id="myForm">
+    <input type="hidden" name="Destinatar" value="lupodenisa@gmail.com">
+    <label for="fname">Nume</label>
+    <input type="text" id="fname" name="Numele" placeholder="Introdu numele.." required>
+    <label for="lname">Prenume</label>
+    <input type="text" id="lname" name="Prenume" placeholder="Introdu prenumele.." required>
+    <label for="mail">E-mail</label>
+    <input type="text" id="mail" name="E-mail" placeholder="Introdu e-mail.." required>
+    <label for="Țară">Țară</label>
+    <select id="Țară" name="Țară" required>
+        <option value="România">România</option>
+        <option value="spain">Spania</option>
+        <option value="france">Franța</option>
+    </select>
+    <label for="Mesaj">Mesaj</label>
+    <textarea id="Mesaj" name="Mesaj" placeholder="Mesajul dumneavoastră.." style="height:200px" required></textarea>
+    <div class="trimite-container">
+        <input type="submit" value="Trimite mesaj" class="trimite">
+    </div>
+</form>
+
+
+        </div>
+        <div class="container2">
+            <div class="faq-image-container">
+                <img src="./imaginii Contact/Photo.jpg" alt="Imagine">
+            </div>
+            <div class="faq-container">
+                <h1>Întrebări frecvente</h1>
+                <div class="faq active">
+                    <h3 class="faq-title">
+                        Cât timp durează livrarea standard?
+                    </h3>
+                    <p class="faq-text">
+                        Timpul de livrare standard variază în funcție de destinație și opțiunile alese la momentul comenzii.
+                        De obicei, livrarea standard se efectuează în intervalul de 8 la 20 zile lucrătoare. Pentru informații mai precise, vă recomandăm să consultați detaliile de livrare disponibile în momentul finalizării comenzii sau să accesați secțiunea noastră dedicată livrărilor.
+                    </p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="faq">
+                    <h3 class="faq-title">
+                        Ce se întâmplă dacă nu sunt acasă în momentul livrării?
+                    </h3>
+                    <p class="faq-text">
+                        Depozitare într-un Punct de Ridicare (Pick-Up Point): Unii curieri oferă opțiunea de a prelua coletul de la un punct de ridicare local. Informațiile despre locul respectiv și orele de funcționare vor fi incluse în notificare.
+                    </p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="faq">
+                    <h3 class="faq-title">
+                        Care sunt politica de returnare și condițiile aferente?
+                    </h3>
+                    <p class="faq-text">
+                        Termenul de Returnare: Aflați în cât timp trebuie să solicitați returnarea unui produs după primire. Acest termen poate varia în funcție de politica specifică a companiei sau de natura produsului.
+                    </p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content">
+            <div class="services">
+              <h4>Centru de ajutor</h4>
+              <p><a href="./Contact.html">Contact</a></p>
+              <h4>Servicii</h4>
+              <p><a href="./pagini_nivel3/ServiciiLocale.html">Servicii locale</a></p>
+              <p><a href="./pagini_nivel3/ServiciiInternationale.html">Servicii internationale</a></p>
+              <p><a href="./pagini_nivel3/ServiciiTransCourier.html">Servicii Trans Courier</a></p>
+            </div>
+           
+            <div class="links">
+              <h4>Linkeuri utile</h4>
+              <p><a href="./IntrebariFrecvente.html">Întrebări frecvente</a></p>
+              <p><a href="./Servicii.html">Servicii</a></p>
+              <p><a href="./TrimiteColet.html">Trimite colet</a></p>
+      
+            </div>
+            <div class="social-media">
+                <h4>Urmărește-ne</h4>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/farazc60"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/codewithfaraz"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/codewithfaraz"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <hr>
+        <p style="text-align: center; font-size: 15px;">&copy; All rights reserved</p>
+    </footer>
+
+   
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("myForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                if (validateForm()) {
+                    sendEmail();
+                } else {
+                    alert("Te rog completează corect toate câmpurile!");
+                }
+            });
+
+            function validateForm() {
+                var valid = true;
+                var errorMessages = [];
+
+                var numeInput = document.getElementById("fname");
+                var prenumeInput = document.getElementById("lname");
+                var emailInput = document.getElementById("mail");
+                var taraInput = document.getElementById("Țară");
+                var mesajInput = document.getElementById("Mesaj");
+
+                if (numeInput.value === "") {
+                    errorMessages.push("Te rog introdu Numele.");
+                    valid = false;
+                }
+
+                if (prenumeInput.value === "") {
+                    errorMessages.push("Te rog introdu Prenumele.");
+                    valid = false;
+                }
+
+                if (emailInput.value === "" || !validateEmail(emailInput.value)) {
+                    errorMessages.push("Te rog introdu o adresă de email validă.");
+                    valid = false;
+                }
+
+                if (taraInput.value === "") {
+                    errorMessages.push("Te rog selectează Țara.");
+                    valid = false;
+                }
+
+                if (mesajInput.value === "") {
+                    errorMessages.push("Te rog introdu Mesajul.");
+                    valid = false;
+                }
+
+                if (!valid) {
+                    alert(errorMessages.join("\n"));
+                }
+
+                return valid;
+            }
+
+            function validateEmail(email) {
+                var regex = /\S+@\S+\.\S+/;
+                return regex.test(email);
+            }
+
+            function sendEmail() {
+                var form = document.getElementById("myForm");
+                var formData = new FormData(form);
+    
+                formData.append("Destinatar", "lupodenisa@gmail.com");
+    
+                fetch("https://formspree.io/f/mkndgopk", {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        "Accept": "application/json"
+                    },
+                }).then(response => response.json())
+                .then(data => {
+                    alert("E-mail trimis cu succes!");
+                })
+                .catch(error => {
+                    console.error("Eroare la trimiterea e-mailului:", error);
+                    alert("Eroare la trimiterea e-mailului.");
+                });
+            }
+        });
+    </script>
+    
+    
+    
+</body>
+</html>
