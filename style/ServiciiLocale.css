@@ -1,0 +1,480 @@
+
+main
+{
+  width: 100%;
+   padding:0;
+margin: 0;
+   font-family: "Tw Cen MT", Helvetica, Arial, sans-serif;
+   font-size: 200%;
+}
+body
+{
+ padding: 0;
+ margin: 0;
+ background-color: white; 
+transition: background-color 0.1s ease;
+ font-size: 62.5%;
+ font-family: "Tw Cen MT", Helvetica, Arial, sans-serif;
+ overflow-x: hidden;
+}
+/* Header */
+header nav {
+  overflow: hidden;
+  background-color: #EDEBEB;
+  position: static;
+  display: flex;
+  padding: 10px;
+ 
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+ 
+}
+
+.navbar .logo {
+  display: inline;
+  margin-left: 10px;
+}
+
+.logo h1 {
+  display: inline;
+  font-size: 30px;
+  margin-left: 20px; /* Adaugă un spațiu între logo și h1 */
+  position: relative;
+  top: -15px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+ align-items: center;
+}
+.nav-list {
+  margin-left: auto;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  
+}
+
+.navbar button {
+  padding: 10px 20px;
+  border: 1px solid #FDAF3B;
+  background-color: #FDAF3B;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(36, 90%, 65%);
+}
+
+
+#menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+
+
+
+  
+ 
+  /*Main*/
+  .background {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .background img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.text-overlay button{
+    
+    padding: 20px 30px;
+    border: 1px solid #00CCA6;
+    background-color: #00CCA6;
+    color: black;
+    border-radius: 60px;
+    cursor: pointer;
+
+} 
+.text-overlay button:hover {
+    background-color: #349b88;
+  }
+  
+.text-overlay p{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: normal; 
+    font-size: 20px;
+}
+
+/*Card*/
+* {
+    box-sizing: border-box;
+  }
+ 
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+   
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -120px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .card1{
+    box-shadow: 0 4px 8px 0 white;
+    padding: 40px;
+    text-align: center;
+    background-color: #C8CC00;
+  }
+  /*TEXT and FOTO*/
+  .section h1{
+    padding: 60px;
+    height: auto;
+  }
+  .rand {
+    display: flex;
+  }
+  .rand2{
+    display: flex;
+    position: relative;
+    top: -80px;
+  }
+  
+  .coloana {
+    flex: 50%;
+    padding: 120px;
+    height: auto; 
+    text-align: center;
+    margin-bottom: 80px;
+  
+  }
+/*Foooter(le aranjeaza pozitionarea...)*/
+  
+  
+.footer {
+    overflow: hidden;
+    background-color: #83C378;
+    clear: both;
+    color: black;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer .heading {
+    color: black;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 30px;
+  }
+  .fab {
+  display: inline;
+  font-size: 40px;
+  margin-right: 10px;
+  color: #EDEBEB;
+  
+  
+  
+  }
+
+@media only screen and (max-width: 768px) {
+    /*footer*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .footer .content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .footer {
+      position: unset;
+    }
+    .menu-icon {
+      display: flex;
+     margin-left: auto;
+     
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #EDEBEB;
+      z-index: 2;
+    }
+
+  .nav-list li:hover {
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+}
+    nav ul.show {
+      display: flex;
+     
+    }
+  
+    nav li {
+      margin-right: 0;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+     nav button{
+      display: none;
+  
+    }
+    /*Slide*/
+    .text {
+  
+      color: #f2f2f2;
+      font-size: 15px;
+     margin-left: 50px;
+     margin-bottom: 50px;
+      position: absolute;
+      bottom: 180px;
+      width: 50%;
+      text-align: left;
+    }
+    .img {
+      
+   
+      width: 767px;
+      overflow: hidden;
+      align-self:center;
+      max-width: 80%;
+      position: relative;
+      top: 145px;
+     
+    }
+    #awb-search {
+      padding: 10px 30px 10px 90px;
+      border: 1px solid #ccc;
+      border-radius: 60px;
+      position: relative;
+      top: 50px;
+      font-size: 30px;
+      right: 50px;
+     
+      
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+      .text-overlay h1{
+        font-size: 25px;
+     }
+     .text-overlay p{
+         font-size: 10px;
+     }
+     .row{
+        flex-direction: column;
+     }
+     .column{
+        width: 100%;
+        position: relative;
+        top: 60px;
+       
+     }
+     .section h1{
+        padding: 20px;
+        font-size: 25px;
+      }
+      .rand{
+        flex-direction: column;
+      }
+      .rand2{
+        flex-direction: column;
+      }
+      .coloana{
+        width: 100%;
+      }
+      .text-overlay button{
+    
+        padding: 10px 20px;}
+
+}
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+  
+        .footer .content {
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+          text-align: center;
+        }
+      
+        .footer {
+          position: unset;
+        }
+        .menu-icon {
+          display: flex;
+         margin-left: auto;
+         
+        }
+      
+        nav ul {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          background-color: #EDEBEB;
+          z-index: 2;
+        }
+    
+      .nav-list li:hover {
+      background-color: white;
+      margin-left: 0;
+      margin-right: 0;
+    }
+        nav ul.show {
+          display: flex;
+         
+        }
+      
+        nav li {
+          margin-right: 0;
+          text-align: center;
+          width: 100%;
+          margin-bottom: 10px;
+        }
+         nav button{
+          display: none;
+      
+        }
+        /*Slide*/
+        .text {
+      
+          color: #f2f2f2;
+          font-size: 15px;
+         margin-left: 50px;
+         margin-bottom: 50px;
+          position: absolute;
+          bottom: 180px;
+          width: 50%;
+          text-align: left;
+        }
+        .img {
+          
+       
+          width: 767px;
+          overflow: hidden;
+          align-self:center;
+          max-width: 80%;
+          position: relative;
+          top: 145px;
+         
+        }
+        #awb-search {
+          padding: 10px 30px 10px 90px;
+          border: 1px solid #ccc;
+          border-radius: 60px;
+          position: relative;
+          top: 50px;
+          font-size: 30px;
+          right: 50px;
+         
+          
+        }
+        .text-overlay h1{
+           font-size: 35px;
+        }
+        .text-overlay p{
+            font-size: 15px;
+        }
+    }  
